@@ -1,0 +1,27 @@
+DisasterResponseAgent starting...
+State: IDLE - monitoring disaster environment
+Detected Disaster: Flood
+Severity Level: Medium
+Severity not critical. Continuing monitoring.
+State: IDLE - monitoring disaster environment
+Detected Disaster: Fire
+Severity Level: High
+State: RESCUING - Responding to Fire
+Dispatching fire trucks and emergency responders...
+Rescue operation completed.
+State: COMPLETED - Mission finalized
+State: IDLE - monitoring disaster environment
+Detected Disaster: Flood
+Severity Level: High
+State: RESCUING - Responding to Flood
+Deploying rescue boats and evacuation teams...
+Rescue operation completed.
+State: COMPLETED - Mission finalized
+State: IDLE - monitoring disaster environment
+Detected Disaster: Flood
+Severity Level: High
+State: RESCUING - Responding to Flood
+Deploying rescue boats and evacuation teams...
+Rescue operation completed.
+State: COMPLETED - Mission finalized
+State: IDLE - monitoring disaster environment

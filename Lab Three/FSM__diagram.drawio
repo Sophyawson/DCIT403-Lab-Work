@@ -1,0 +1,58 @@
+<mxfile host="65bd71144e">
+    <diagram name="Lab3-RescueAgent-FSM" id="lab3-fsm">
+        <mxGraphModel dx="544" dy="381" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="start" value="START" style="ellipse;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry y="300" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="idle" value="IDLE&#xa;(Wait event)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="290" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="rescuing" value="RESCUING&#xa;(Perform rescue)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="140" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="completed" value="COMPLETED&#xa;(Mission finished)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="430" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" value="Initial" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;" parent="1" source="start" target="idle" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="High/Critical" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#FF0000;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="350" y="160"/>
+                        </Array>
+                        <mxPoint x="320" y="310" as="sourcePoint"/>
+                        <mxPoint x="500" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e3" value="Low/Medium" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#00AA00;" parent="1" source="idle" target="idle" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="40" y="330"/>
+                            <mxPoint x="40" y="250"/>
+                            <mxPoint x="160" y="250"/>
+                            <mxPoint x="160" y="300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e4" value="Rescue done" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;" parent="1" source="rescuing" target="completed" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="560" y="300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e5" value="Return to idle" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;" parent="1" source="completed" target="idle" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="350" y="470"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
